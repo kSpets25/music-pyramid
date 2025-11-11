@@ -15,6 +15,231 @@ a {
   box-sizing: border-box;
 }
 
+/* styles/globals.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.container {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  color: #555;
+  text-align: center;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.search-input {
+  width: 70%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.search-button {
+  padding: 0.6rem 1rem;
+  margin-left: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #0070f3;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #0059c9;
+}
+
+.results-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.result-item {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.no-results {
+  text-align: center;
+  color: #666;
+  margin-top: 1rem;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 1rem;
+}.result-item {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.result-item h3 {
+  margin: 0 0 0.5rem;
+  color: #0070f3;
+}
+
+.teaser {
+  margin: 0.5rem 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.links {
+  margin-top: 0.5rem;
+}
+
+.links a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #0070f3;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #0059c9;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #0070f3;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #d4e3ff;
+}
+
+.nav-link.active {
+  text-decoration: underline;
+}
+
+/* About page */
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Artist result card styles */
+.artist-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #f9f9f9;
+  transition: box-shadow 0.2s ease;
+}
+
+.artist-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.artist-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.artist-info {
+  flex: 1;
+}
+
+.artist-name {
+  margin: 0 0 0.3rem;
+}
+
+.artist-name a {
+  text-decoration: none;
+  color: #0070f3;
+}
+
+.artist-name a:hover {
+  text-decoration: underline;
+}
+
+.teaser {
+  margin: 0.5rem 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.artist-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.artist-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.fallback-image {
+  width: 50px;          
+  height: 50px;
+  object-fit: contain;    /* keep aspect ratio */
+  filter: grayscale(50%); /* optional: give it a "placeholder" look */
+  display: block;
+  margin: 0 auto;        
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
