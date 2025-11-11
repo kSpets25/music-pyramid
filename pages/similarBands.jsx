@@ -11,19 +11,23 @@ import NavBar from "../components/NavBar";
 
 
 export const getServerSideProps = withIronSessionSsr(
-  async function getServerSideProps({ req }) {
-    const user = req.session.user;
-    const props = {};
-    if (user) {
-      props.user = req.session.user;
-      props.isLoggedIn = true;
-    } else {
-      props.isLoggedIn = false;
-    }
-    return { props };
-  },
-  sessionOptions
-);
+  async function getServerSideProps({ req, query }) {
+    const user = req.session.user || null;
+    const userquery = query.userquery || null;
+    const apiKey = process.env.TASTEDIVE_API_KEY || "";
+    let results = [];
+    let error = null;
+
+    if (userquery) {
+      const apiUrl = `https://tastedive.com/api/similar?q=${encodeURIComponent(
+        userquery
+      )}&type=music&info=1&limit=10&k=${apiKey}`;
+
+      try {
+        const res = await fetch(apiUrl);
+        const data = await res.json();
+        results = data?.Similar?.Results || [];
+
 
 export default function similarBands(props) {
   const router = useRouter();
