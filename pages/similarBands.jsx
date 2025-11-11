@@ -7,7 +7,7 @@ import sessionOptions from "../config/session";
 import styles from "../styles/Home.module.css";
 import Header from "../components/header";
 import useLogout from "../hooks/useLogout";
-import MusicSearch from '../components/MusicSearch';
+
 
 
 export const getServerSideProps = withIronSessionSsr(
@@ -40,7 +40,7 @@ export default function similarBands(props) {
       <h1>My Application Similar Bands Page</h1>
       <main className={styles.main}>
       
-        
+    
        
       </main>
 
