@@ -38,5 +38,9 @@ export default function MusicSearch() {
           if (e.key === 'Enter') handleSubmit(e); // handle Enter key
         }}
       />
-     
+      <button className="search-button" type="submit">
+        Search Similar Music
+      </button>
+    </form>
+  );
 }
