@@ -18,7 +18,8 @@ export default function MusicSearch() {
     if (!trimmedQuery) return;
 
     // Route to the same page with query param
-    router.replace(`/?userquery=${encodeURIComponent(trimmedQuery)}`);
+    router.replace(`/similarBands?userquery=${encodeURIComponent(trimmedQuery)}`);
+
 
     // Clear the input and focus it again
     setQuery('');
