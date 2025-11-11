@@ -1,5 +1,16 @@
 .container {
   display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
   justify-content: space-between;
-  gap: 12px;
+  gap: 20px;
+  background-color: darkblue;
+  color: whitesmoke
+  
+}
+
+.navigation {
+  display: flex; 
+  gap: 30px;
+  
 }

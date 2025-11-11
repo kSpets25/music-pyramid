@@ -8,8 +8,11 @@ export default function Header(props) {
     <header className={styles.container}>
       {props.isLoggedIn ? (
         <>
-          <p>
+          <p className={styles.navigation}>
             <Link href="/">Home</Link>
+            <Link href="/about">About</Link>
+            <Link href="/similarBands">Similar Bands</Link>
+            <Link href="/myBands">My Bands</Link>
           </p>
           <div className={styles.container}>
             <p>Welcome, {props.username}!</p>

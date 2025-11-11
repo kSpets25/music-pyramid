@@ -23,7 +23,7 @@ export const getServerSideProps = withIronSessionSsr(
   sessionOptions
 );
 
-export default function Home(props) {
+export default function myBands(props) {
   const router = useRouter();
   const logout = useLogout();
   return (
@@ -35,7 +35,7 @@ export default function Home(props) {
       </Head>
 
       <Header isLoggedIn={props.isLoggedIn} username={props?.user?.username} />
-      <h1>My Application Home Page</h1>
+      <h1>My Application My Bands Page</h1>
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
