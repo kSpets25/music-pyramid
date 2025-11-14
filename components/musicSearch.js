@@ -7,21 +7,18 @@ export default function MusicSearch() {
   const [query, setQuery] = useState('');
   const inputRef = useRef(null);
 
-  // Automatically focus the input when the component mounts
   useEffect(() => {
     inputRef.current?.focus();
   }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const trimmedQuery = query.trim();
-    if (!trimmedQuery) return;
+    const trimmed = query.trim();
+    if (!trimmed) return;
 
-    // Route to the same page with query param
-    router.replace(`/similarBands?userquery=${encodeURIComponent(trimmedQuery)}`);
+    // Route to /similarBands instead of /
+    router.replace(`/similarBands?userquery=${encodeURIComponent(trimmed)}`);
 
-
-    // Clear the input and focus it again
     setQuery('');
     inputRef.current?.focus();
   };
@@ -36,7 +33,7 @@ export default function MusicSearch() {
         ref={inputRef}
         onChange={(e) => setQuery(e.target.value)}
         onKeyDown={(e) => {
-          if (e.key === 'Enter') handleSubmit(e); // handle Enter key
+          if (e.key === 'Enter') handleSubmit(e);
         }}
       />
       <button className="search-button" type="submit">
