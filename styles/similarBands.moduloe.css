@@ -1,0 +1,218 @@
+/* ============================= */
+/* Container + Main Layout       */
+/* ============================= */
+
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* ================================= */
+  /* Search Bar                        */
+  /* ================================= */
+  
+  .search-form {
+    display: flex;
+    width: 100%;
+    max-width: 650px;
+    margin: 1.5rem auto;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 0.9rem;
+    border: 2px solid #ccc;
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.2s;
+  }
+  
+  .search-input:focus {
+    border-color: #0070f3;
+  }
+  
+  .search-button {
+    padding: 0.9rem 1.2rem;
+    background: #0070f3;
+    border: none;
+    color: white;
+    border-radius: 0 8px 8px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .search-button:hover {
+    background: #005ec2;
+  }
+  
+  /* ================================= */
+  /* Results List                      */
+  /* ================================= */
+  
+  .results-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .result-item {
+    margin: 1.5rem 0;
+  }
+  
+  /* ================================= */
+  /* Artist Card                       */
+  /* ================================= */
+  
+  .artist-card {
+    display: flex;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    padding: 1rem;
+    gap: 1.2rem;
+    transition: transform 0.15s ease-in-out;
+  }
+  
+  .artist-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  .artist-image-link {
+    display: block;
+    min-width: 110px;
+    max-width: 110px;
+    height: 110px;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+  
+  .artist-image {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .artist-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .artist-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .artist-name a {
+    text-decoration: none;
+    color: #0070f3;
+  }
+  
+  .artist-name a:hover {
+    text-decoration: underline;
+  }
+  
+  .teaser {
+    margin: 0.8rem 0;
+    color: #444;
+    font-size: 0.95rem;
+  }
+  
+  .links {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .links a {
+    color: #0070f3;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ================================= */
+  /* No Results + Error Messages       */
+  /* ================================= */
+  
+  .no-results {
+    margin-top: 1rem;
+    color: #666;
+    font-style: italic;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 1rem;
+    font-weight: 500;
+  }
+  
+  /* ================================= */
+  /* Responsive Adjustments            */
+  /* ================================= */
+  
+  @media (max-width: 600px) {
+    .artist-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .artist-image-link {
+      max-width: 160px;
+      min-width: 160px;
+      height: 160px;
+    }
+  
+    .artist-image {
+      width: 160px;
+      height: 160px;
+    }
+  
+    .links {
+      justify-content: center;
+    }
+  }
+  
+
+
+
+.saveButton {
+    background: #ffbf00;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0.8rem;
+    transition: background 0.2s ease;
+    width: fit-content;
+  }
+  
+  .saveButton:hover {
+    background: #e6aa00;
+  }
+  

@@ -1,3 +1,5 @@
+
+// /pages/myBands.js
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -35,51 +37,8 @@ export default function myBands(props) {
       </Head>
 
       <Header isLoggedIn={props.isLoggedIn} username={props?.user?.username} />
-      <h1>My Application My Bands Page</h1>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Current Location: <code className={styles.code}>{router.asPath}</code>
-          <br />
-          Status:{" "}
-          <code className={styles.code}>
-            {!props.isLoggedIn && " Not"} Logged In
-          </code>
-        </p>
-
-        <div className={styles.grid}>
-          {props.isLoggedIn ? (
-            <>
-              <Link href="/dashboard" className={styles.card}>
-                <h2>Dashboard &rarr;</h2>
-                <p>This page is only visible if you are logged in.</p>
-              </Link>
-              <div
-                onClick={logout}
-                style={{ cursor: "pointer" }}
-                className={styles.card}
-              >
-                <h2>Logout &rarr;</h2>
-                <p>Click here to log out.</p>
-              </div>
-            </>
-          ) : (
-            <>
-              <Link href="/login" className={styles.card}>
-                <h2>Login &rarr;</h2>
-                <p>Visit the login page.</p>
-              </Link>
-
-              <Link href="/signup" className={styles.card}>
-                <h2>Create Account &rarr;</h2>
-                <p>Create an account.</p>
-              </Link>
-            </>
-          )}
-        </div>
+      <h1>My Bands Page</h1>
+      <main >
       </main>
 
       <footer className={styles.footer}>

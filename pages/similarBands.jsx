@@ -6,63 +6,61 @@ import styles from "../styles/Home.module.css";
 import Header from "../components/header";
 import MusicSearch from "../components/MusicSearch"; // uses updated routing
 import { useRouter } from "next/router";
+//import styles from "/styles/similarBands.module.css"
+
 
 export const getServerSideProps = withIronSessionSsr(
   async function getServerSideProps({ req, query }) {
-    const props = {};
-
-    props.isLoggedIn = !!req.session.user;
-    props.user = req.session.user || null;
-
+    const user = req.session.user || null;
+    const isLoggedIn = !!user;
     const userquery = query.userquery || "";
-    props.userquery = userquery;
 
-    // No search initiated
-    if (!userquery) return { props: { ...props, results: [] } };
-
-    const apiKey = process.env.TASTEDIVE_API_KEY || "";
-    const apiUrl = `https://tastedive.com/api/similar?q=${encodeURIComponent(
-      userquery
-    )}&type=music&info=1&limit=10&k=${apiKey}`;
-
-    try {
-      // TasteDive request
-      const res = await fetch(apiUrl);
-      const data = await res.json();
-      let results = data?.similar?.results || [];
-
-      // Add Wikipedia images
-      results = await Promise.all(
-        results.map(async (item) => {
-          if (!item.wUrl) return item;
-
-          try {
-            const title = decodeURIComponent(item.wUrl.split("/").pop());
-            const wiki = await fetch(
-              `https://en.wikipedia.org/api/rest_v1/page/summary/${title}`
-            );
-            const wikiData = await wiki.json();
-            item.wImg = wikiData.thumbnail?.source || null;
-          } catch {
-            item.wImg = null;
-          }
-          return item;
-        })
-      );
-
-      return { props: { ...props, results } };
-    } catch (error) {
+    // No search? No fetch
+    if (!userquery) {
       return {
         props: {
-          ...props,
+          user,
+          isLoggedIn,
+          userquery: "",
           results: [],
-          error: "Failed to fetch similar music.",
+        },
+      };
+    }
+
+    try {
+      // Internal API Route → FAST
+      const res = await fetch(
+        `${process.env.NEXT_PUBLIC_BASE_URL}/api/similarBands?userquery=${encodeURIComponent(
+          userquery
+        )}`
+      );
+
+      const data = await res.json();
+
+      return {
+        props: {
+          user,
+          isLoggedIn,
+          userquery,
+          results: data.results || [],
+          error: data.error || null,
+        },
+      };
+    } catch (e) {
+      return {
+        props: {
+          user,
+          isLoggedIn,
+          userquery,
+          results: [],
+          error: "Internal API failed",
         },
       };
     }
   },
   sessionOptions
 );
+
 
 export default function similarBands({
   isLoggedIn,
@@ -137,6 +135,34 @@ export default function similarBands({
                           </a>
                         )}
                       </div>
+                                        
+                                          <button
+                      
+                      onClick={async () => {
+                        const res = await fetch("/api/band", {
+                          method: "POST",
+                          headers: {
+                            "Content-Type": "application/json",
+                          },
+                          body: JSON.stringify({
+                            name: item.name,
+                            image: item.wImg,
+                            wiki: item.wUrl,
+                            youtube: item.yUrl,
+                            teaser: item.wTeaser,
+                          }),
+                        });
+
+                        const data = await res.json();
+
+                        if (data.success) {
+                          alert(`${item.name} saved to My Bands!`);
+                        }
+                      }}
+                    >
+                      ⭐ Save Band
+                    </button>
+
                     </div>
                   </div>
                 </li>
