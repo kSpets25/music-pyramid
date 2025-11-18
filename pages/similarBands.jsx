@@ -136,29 +136,30 @@ export default function similarBands({
                         )}
                       </div>
                                         
-                                          <button
-                      
-                      onClick={async () => {
-                        const res = await fetch("/api/band", {
-                          method: "POST",
-                          headers: {
-                            "Content-Type": "application/json",
-                          },
-                          body: JSON.stringify({
-                            name: item.name,
-                            image: item.wImg,
-                            wiki: item.wUrl,
-                            youtube: item.yUrl,
-                            teaser: item.wTeaser,
-                          }),
-                        });
+                      <button
+                        onClick={async () => {
+                          const res = await fetch("/api/band", {
+                            method: "POST",
+                            headers: {
+                              "Content-Type": "application/json",
+                            },
+                            body: JSON.stringify({
+                              name: item.name,
+                              image: item.wImg,
+                              wiki: item.wUrl,
+                              youtube: item.yUrl,
+                              teaser: item.wTeaser,
+                            }),
+                          });
 
-                        const data = await res.json();
+                          const data = await res.json();
 
-                        if (data.success) {
-                          alert(`${item.name} saved to My Bands!`);
-                        }
-                      }}
+                          if (data.success) {
+                            alert(`${item.name} saved to My Bands!`);
+                          } else {
+                            alert(data.error || "Failed to save band");
+                          }
+                        }}
                     >
                       ⭐ Save Band
                     </button>
