@@ -3,6 +3,7 @@
 }
 
 .main {
+  background-color: aqua;
   min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
@@ -39,11 +40,6 @@
   text-decoration: underline;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
 
 .title,
 .description {
@@ -99,7 +95,7 @@
   transition: 0.15s ease;
 }
 .form>button:is(:hover, :focus, :active) {
-  color: #fafafa;
+  color: #ece8e8;
   background-color: #222;
 }
 
@@ -117,6 +113,22 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .logo {

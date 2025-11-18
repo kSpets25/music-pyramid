@@ -7,6 +7,7 @@ import Band from "../db/models/bands";
 import Header from "../components/header";
 import styles from "../styles/Home.module.css";
 
+
 export const getServerSideProps = withIronSessionSsr(
   async function getServerSideProps({ req }) {
     const user = req.session.user || null;
@@ -26,8 +27,23 @@ export const getServerSideProps = withIronSessionSsr(
   },
   sessionOptions
 );
-
+// MyBands page with delete button
 export default function MyBands({ user, bands }) {
+  const handleDelete = async (id) => {
+    const confirmed = confirm ("Delete Band?"); 
+    if (!confirmed) return;
+
+    const res = await fetch (`/api/deleteBand?id=${id}`, {
+      method: "DELETE",
+    });
+    if (res.ok) {
+      //reload the page
+      window.location.reload();
+    }else {
+      alert("Failed to delete the band");
+    }
+    };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -59,6 +75,14 @@ export default function MyBands({ user, bands }) {
                       </a>
                     )}
                     {band.teaser && <p>{band.teaser}</p>}
+                      
+                      {/* Delete Button */}
+                      <button className="deleteBtn"
+                        onClick={() => handleDelete(band._id)}
+                      >
+                        Delete
+                      </button>
+                  
                   </div>
                 </div>
               </li>
@@ -66,6 +90,7 @@ export default function MyBands({ user, bands }) {
           </ul>
         )}
       </main>
+      
     </div>
   );
 }

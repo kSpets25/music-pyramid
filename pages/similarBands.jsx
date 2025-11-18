@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { withIronSessionSsr } from "iron-session/next";
 import sessionOptions from "../config/session";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/similarBands.module.css";
 import Header from "../components/header";
 import MusicSearch from "../components/MusicSearch"; // uses updated routing
 import { useRouter } from "next/router";
@@ -82,11 +82,11 @@ export default function similarBands({
       {/* HEADER unchanged */}
       <Header isLoggedIn={isLoggedIn} username={user?.username} />
 
-      <h1>My Application My similarBands Page</h1>
+      <h1>My similarBands Page</h1>
 
       <main className={styles.main}>
         {/* 🔍 Reusable Search component */}
-        <MusicSearch />
+        <MusicSearch initialQuery={userquery} />
 
         {userquery && <h2>Similar music to: "{userquery}"</h2>}
         {error && <p style={{ color: "red" }}>{error}</p>}
@@ -137,29 +137,29 @@ export default function similarBands({
                       </div>
                                         
                       <button
-                        onClick={async () => {
-                          const res = await fetch("/api/band", {
-                            method: "POST",
-                            headers: {
-                              "Content-Type": "application/json",
-                            },
-                            body: JSON.stringify({
-                              name: item.name,
-                              image: item.wImg,
-                              wiki: item.wUrl,
-                              youtube: item.yUrl,
-                              teaser: item.wTeaser,
-                            }),
-                          });
+                      onClick={async () => {
+                        const res = await fetch("/api/band", {
+                          method: "POST",
+                          headers: {
+                            "Content-Type": "application/json",
+                          },
+                          body: JSON.stringify({
+                            name: item.name,
+                            image: item.wImg,
+                            wiki: item.wUrl,
+                            youtube: item.yUrl,
+                            teaser: item.wTeaser,
+                          }),
+                        });
 
-                          const data = await res.json();
+                        const data = await res.json();
 
-                          if (data.success) {
-                            alert(`${item.name} saved to My Bands!`);
-                          } else {
-                            alert(data.error || "Failed to save band");
-                          }
-                        }}
+                        if (data.success) {
+                          alert(`${item.name} saved to My Bands!`);
+                        } else {
+                          alert(data.error || "Failed to save band");
+                        }
+                      }}
                     >
                       ⭐ Save Band
                     </button>

@@ -1,26 +1,31 @@
-// components/MusicSearch.js
+// components/musicSearch.js
 import { useRouter } from 'next/router';
 import { useState, useRef, useEffect } from 'react';
 
-export default function MusicSearch() {
+export default function MusicSearch({ initialQuery = '' }) {
   const router = useRouter();
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState(initialQuery);
   const inputRef = useRef(null);
 
+  // Focus input on mount
   useEffect(() => {
     inputRef.current?.focus();
   }, []);
+
+  // Update query state if the URL changes (user revisits or uses back button)
+  useEffect(() => {
+    if (router.query.userquery) {
+      setQuery(router.query.userquery);
+    }
+  }, [router.query.userquery]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const trimmed = query.trim();
     if (!trimmed) return;
 
-    // Route to /similarBands instead of /
-    router.replace(`/similarBands?userquery=${encodeURIComponent(trimmed)}`);
-
-    setQuery('');
-    inputRef.current?.focus();
+    // Route to /similarBands with new query
+    router.push(`/similarBands?userquery=${encodeURIComponent(trimmed)}`);
   };
 
   return (
@@ -42,3 +47,4 @@ export default function MusicSearch() {
     </form>
   );
 }
+

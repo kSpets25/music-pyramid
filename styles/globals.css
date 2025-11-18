@@ -1,7 +1,7 @@
 html,
 body {
   padding: 0;
-  margin: 1.0rem;
+  margin: 0rem;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -21,7 +21,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #f7f7f7;
+  background-color: #f3ecec;
   color: #333;
 }
 
@@ -29,11 +29,18 @@ body {
   max-width: 700px;
   margin: 3rem auto;
   padding: 2rem;
-  background: #fff;
+  background: #5a1818;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+h1 {
+  
+    text-align: center;
+    margin: 2rem;
+    line-height: 1.15;
+    font-size: 2.5rem;
+}
 .title {
   text-align: center;
   font-size: 2rem;
@@ -43,7 +50,7 @@ body {
 .subtitle {
   margin-top: 1rem;
   font-size: 1.3rem;
-  color: #555;
+  color: #d70e0e;
   text-align: center;
 }
 
@@ -54,7 +61,7 @@ body {
 }
 
 .search-input {
-  width: 70%;
+  width: 25%;
   padding: 0.6rem;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -238,6 +245,27 @@ body {
   filter: grayscale(50%); /* optional: give it a "placeholder" look */
   display: block;
   margin: 0 auto;        
+}
+
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
 }
 
 @media (prefers-color-scheme: dark) {
