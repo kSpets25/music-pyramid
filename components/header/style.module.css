@@ -1,16 +1,18 @@
 .container {
+  
   display: flex;
+  padding-top:  20px;
   padding-left: 30px;
   padding-right: 30px;
   justify-content: space-between;
   gap: 20px;
-  background-color: darkblue;
-  color: whitesmoke
-  
+  color: rgb(229, 228, 231);
+  background-color: rgb(39, 39, 83);
 }
 
 .navigation {
   display: flex; 
   gap: 30px;
+  padding-top: 20px;
   
 }

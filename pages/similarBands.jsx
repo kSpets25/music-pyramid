@@ -6,8 +6,6 @@ import styles from "../styles/similarBands.module.css";
 import Header from "../components/header";
 import MusicSearch from "../components/MusicSearch"; // uses updated routing
 import { useRouter } from "next/router";
-//import styles from "/styles/similarBands.module.css"
-
 
 export const getServerSideProps = withIronSessionSsr(
   async function getServerSideProps({ req, query }) {
@@ -82,9 +80,8 @@ export default function similarBands({
       {/* HEADER unchanged */}
       <Header isLoggedIn={isLoggedIn} username={user?.username} />
 
-      <h1>My similarBands Page</h1>
-
       <main className={styles.main}>
+        <h1>My similarBands Page</h1>
         {/* 🔍 Reusable Search component */}
         <MusicSearch initialQuery={userquery} />
 
@@ -179,7 +176,7 @@ export default function similarBands({
         <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">
           Powered by{" "}
           <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            <Image src="/tasteDive_Logo.png" alt="tasteDive Logo" width={120} height={60} />
           </span>
         </a>
       </footer>

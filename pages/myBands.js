@@ -5,7 +5,7 @@ import sessionOptions from "../config/session";
 import dbConnect from "../db/connection";
 import Band from "../db/models/bands";
 import Header from "../components/header";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/myBands.module.css";
 
 
 export const getServerSideProps = withIronSessionSsr(
@@ -27,24 +27,24 @@ export const getServerSideProps = withIronSessionSsr(
   },
   sessionOptions
 );
-// MyBands page with delete button
-export default function MyBands({ user, bands }) {
-  const handleDelete = async (id) => {
-    const confirmed = confirm ("Delete Band?"); 
-    if (!confirmed) return;
+    // MyBands page with delete button
+    export default function MyBands({ user, bands }) {
+      const handleDelete = async (id) => {
+        const confirmed = confirm ("Delete Band?"); 
+        if (!confirmed) return;
 
-    const res = await fetch (`/api/deleteBand?id=${id}`, {
-      method: "DELETE",
-    });
-    if (res.ok) {
-      //reload the page
-      window.location.reload();
-    }else {
-      alert("Failed to delete the band");
-    }
-    };
+        const res = await fetch (`/api/deleteBand?id=${id}`, {
+          method: "DELETE",
+        });
+        if (res.ok) {
+          //reload the page
+          window.location.reload();
+        }else {
+          alert("Failed to delete the band");
+        }
+        };
 
-  return (
+    return (
     <div className={styles.container}>
       <Head>
         <title>My Bands</title>
@@ -93,6 +93,7 @@ export default function MyBands({ user, bands }) {
       
     </div>
   );
+  
 }
 
 

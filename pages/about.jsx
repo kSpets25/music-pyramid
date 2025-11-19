@@ -3,7 +3,7 @@ import Head from "next/head";
 import { withIronSessionSsr } from "iron-session/next";
 import sessionOptions from "../config/session";
 import Header from "../components/header";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/about.module.css";
 
 export const getServerSideProps = withIronSessionSsr(
   async function ({ req }) {
@@ -41,22 +41,10 @@ export default function About({ user, isLoggedIn }) {
         </p>
 
         <h2>Features</h2>
-        <ul>
-          <li>🎧 Search for bands and artists</li>
-          <li>🔍 Explore biographies, Wikipedia links, and YouTube videos</li>
-          <li>⭐ Save your favorite discoveries to your personal library</li>
-          <li>🗂 View them anytime on the My Bands page</li>
-          <li>🔐 User login handled with Iron Session</li>
-          <li>🗄 MongoDB for data storage</li>
-        </ul>
+        
 
         <h2>Tech Stack</h2>
-        <ul>
-          <li>Next.js (Pages Router)</li>
-          <li>React</li>
-          <li>Iron Session for user auth</li>
-          <li>MongoDB for persistent storage</li>
-        </ul>
+       
       </main>
 
       <footer className={styles.footer}>

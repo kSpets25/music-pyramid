@@ -6,6 +6,16 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+.main {
+  background-color: rgb(39, 39, 83);
+  min-height: 100vh;
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -21,7 +31,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #f3ecec;
+  
   color: #333;
 }
 
@@ -35,14 +45,21 @@ body {
 }
 
 h1 {
-  
-    text-align: center;
     margin: 2rem;
     line-height: 1.15;
     font-size: 2.5rem;
+    color: whitesmoke;
 }
+
+h2 {
+  margin: 2rem;
+  line-height: 1.15;
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+
 .title {
-  text-align: center;
+  text-align: centerl;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
@@ -140,43 +157,6 @@ h1 {
   color: #0059c9;
 }
 
-/* Navbar styles */
-.navbar {
-  background-color: #0070f3;
-  padding: 1rem;
-  border-radius: 8px;
-  margin-bottom: 2rem;
-}
-
-.nav-container {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.nav-link {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-  color: #d4e3ff;
-}
-
-.nav-link.active {
-  text-decoration: underline;
-}
-
-/* About page */
-.about-text {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-  text-align: center;
-}
 
 /* Artist result card styles */
 .artist-card {

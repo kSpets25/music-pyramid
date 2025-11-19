@@ -43,7 +43,7 @@ export default function Login(props) {
         },
         body: JSON.stringify({ username, password }),
       });
-      if (res.status === 200) return router.push("/dashboard");
+      if (res.status === 200) return router.push("/");
       const { error: message } = await res.json();
       setError(message);
     } catch (err) {
@@ -62,7 +62,7 @@ export default function Login(props) {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to the <a href="https://nextjs.org">Next.js</a> Login Page!
+          Login to Start Your Music Journey!
         </h1>
 
         <p className={styles.description}>

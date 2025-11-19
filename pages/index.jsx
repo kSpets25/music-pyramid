@@ -37,7 +37,8 @@ export default function Home(props) {
       <Header isLoggedIn={props.isLoggedIn} username={props?.user?.username} />
       
       <main className={styles.main}>
-      <h1>My Application Home Page</h1>
+      <h1>The Music Pyramid</h1>
+      <h2>Start your Music Journey</h2>
       </main>
       
      
@@ -49,7 +50,7 @@ export default function Home(props) {
         >
           Powered by{" "}
           <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            <Image src="/tasteDive_Logo.png" alt="tasteDive Logo" width={120} height={60} />
           </span>
         </a>
       </footer>

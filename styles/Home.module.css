@@ -3,13 +3,12 @@
 }
 
 .main {
-  background-color: aqua;
+  background-color: rgb(39, 39, 83);
   min-height: 100vh;
-  padding: 4rem 0;
+  padding: 2rem;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -47,13 +46,14 @@
 }
 
 .description {
+  color: aqua;
   margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
 }
 
 .code {
-  background: #fafafa;
+  color: whitesmoke;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
@@ -81,6 +81,7 @@
 }
 
 .form {
+  color: aqua;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,7 +133,7 @@
 }
 
 .logo {
-  height: 1em;
+  height: 3em;
   margin-left: 0.5rem;
 }
 
