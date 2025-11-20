@@ -66,7 +66,7 @@ export default function Login(props) {
         </h1>
 
         <p className={styles.description}>
-          Current Location: <code className={styles.code}>{router.asPath}</code>
+          Get Started: <code className={styles.code}>{router.asPath}</code>
           <br />
           Status:{" "}
           <code className={styles.code}>

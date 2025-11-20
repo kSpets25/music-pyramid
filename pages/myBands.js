@@ -27,7 +27,7 @@ export const getServerSideProps = withIronSessionSsr(
   },
   sessionOptions
 );
-    // MyBands page with delete button
+    // MyBands page - includes delete button
     export default function MyBands({ user, bands }) {
       const handleDelete = async (id) => {
         const confirmed = confirm ("Delete Band?"); 
@@ -76,7 +76,7 @@ export const getServerSideProps = withIronSessionSsr(
                     )}
                     {band.teaser && <p>{band.teaser}</p>}
                       
-                      {/* Delete Button */}
+                      {/* Delete Button css located in */}
                       <button className="deleteBtn"
                         onClick={() => handleDelete(band._id)}
                       >

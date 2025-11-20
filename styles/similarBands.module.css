@@ -1,34 +1,20 @@
-
+/*footer text color*/
 .container {
   padding-top: 0;
+  color: #32a2aa;
 }
 
 .main {
-  background-color: rgb(39, 39, 83);
+  background-color: rgb(216, 216, 226);
   min-height: 100vh;
   padding: 2rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
-  
   align-items: center;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
 
 .title a {
   color: #0070f3;
@@ -39,6 +25,7 @@
 .title a:focus,
 .title a:active {
   text-decoration: underline;
+  
 }
 
 
@@ -320,6 +307,21 @@
     margin-top: 1rem;
     font-weight: 500;
   }
+  .saveButton {
+    background: #ffbf00;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0.8rem;
+    transition: background 0.2s ease;
+    width: fit-content;
+  }
+  
+  .saveButton:hover {
+    background: #e6aa00;
+  }
   
   
   /* Responsive Adjustments            */
@@ -351,19 +353,3 @@
 
 
 
-.saveButton {
-    background: #ffbf00;
-    border: none;
-    padding: 0.6rem 1rem;
-    border-radius: 8px;
-    font-weight: 600;
-    cursor: pointer;
-    margin-top: 0.8rem;
-    transition: background 0.2s ease;
-    width: fit-content;
-  }
-  
-  .saveButton:hover {
-    background: #e6aa00;
-  }
-  

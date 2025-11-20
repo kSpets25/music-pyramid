@@ -4,7 +4,7 @@ import { withIronSessionSsr } from "iron-session/next";
 import sessionOptions from "../config/session";
 import styles from "../styles/similarBands.module.css";
 import Header from "../components/header";
-import MusicSearch from "../components/MusicSearch"; // uses updated routing
+import MusicSearch from "../components/musicSearch"; // uses updated routing
 import { useRouter } from "next/router";
 
 export const getServerSideProps = withIronSessionSsr(

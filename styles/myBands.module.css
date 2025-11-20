@@ -1,10 +1,12 @@
 
 .container {
-  padding-top: 0;
+  padding-top: 0px;
+  color:red
 }
 
+
 .main {
-  background-color: rgb(39, 39, 83);
+  background-color: rgb(216, 216, 226);
   min-height: 100vh;
   padding: 2rem 0;
   flex: 1;
@@ -14,21 +16,147 @@
   align-items: center;
 }
 
-.footer {
+.links {
+  margin-top: 0.5rem;
   display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+  gap: 1rem;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+.links a {
+  color: #0070f3;
+  font-weight: 500;
+  text-decoration: none;
 }
+
+.links a:hover {
+  text-decoration: underline;
+}
+/* Artist result card styles */
+.artist-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #d44a4a;
+  transition: box-shadow 0.2s ease;
+}
+
+.artist-card:hover {
+  box-shadow: 0 4px 10px rgba(192, 36, 36, 0.08);
+}
+
+.artist-image {
+  width: 00px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.artist-info {
+  flex: 1;
+}
+
+.artist-name {
+  margin: 0 0 0.3rem;
+}
+
+.artist-name a {
+  text-decoration: none;
+  color: #234872;
+}
+
+.artist-name a:hover {
+  text-decoration: underline;
+}
+
+.teaser {
+  margin: 0.5rem 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.artist-card {
+  display:flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.artist-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.fallback-image {
+  width: 50px;          
+  height: 50px;
+  object-fit: contain;    /* keep aspect ratio */
+  filter: grayscale(50%); /* optional: give it a "placeholder" look */
+  display: block;
+  margin: 0 auto;        
+}
+.results-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.result-item {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.no-results {
+  text-align: center;
+  color: #666;
+  margin-top: 1rem;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 1rem;
+}
+.result-item {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.result-item h3 {
+  margin: 0 0 0.5rem;
+  color: #b8c4d2;
+}
+
+.teaser {
+  margin: 0.5rem 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.links {
+  margin-top: 0.5rem;
+  
+}
+
+.links a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #0070f3;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #0059c9;
+}
+
 
 .title a {
   color: #0070f3;

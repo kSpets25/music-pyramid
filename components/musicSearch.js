@@ -1,4 +1,5 @@
 // components/musicSearch.js
+// Note:  adjust CSS in globals.cc
 import { useRouter } from 'next/router';
 import { useState, useRef, useEffect } from 'react';
 

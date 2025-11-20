@@ -6,15 +6,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-.main {
-  background-color: rgb(39, 39, 83);
-  min-height: 100vh;
-  padding: 2rem;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 
 a {
   color: inherit;
@@ -31,27 +23,27 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  
-  color: #333;
+  color: #f6f1f1;
 }
 
-.container {
-  max-width: 700px;
-  margin: 3rem auto;
-  padding: 2rem;
-  background: #5a1818;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
+/* Page Title*/
 h1 {
-    margin: 2rem;
+    margin: 1rem;
+    padding-top: 1rem;
     line-height: 1.15;
     font-size: 2.5rem;
-    color: whitesmoke;
+    color: rgb(157, 26, 26);
 }
 
+/* Tagline */
 h2 {
+  margin: 1rem;
+  line-height: 1.15;
+  font-size: 1.5rem;
+  color: rgb(35, 31, 123);
+}
+
+h3 {
   margin: 2rem;
   line-height: 1.15;
   font-size: 1.5rem;
@@ -72,17 +64,18 @@ h2 {
 }
 
 .search-form {
+  width: 45%;
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .search-input {
-  width: 25%;
-  padding: 0.6rem;
+  width: 80%;
+  padding: 1.0rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 1rem;
+  font-size: 1.0rem;
 }
 
 .search-button {
@@ -98,7 +91,7 @@ h2 {
 }
 
 .search-button:hover {
-  background-color: #0059c9;
+  background-color: #1f8f1f;
 }
 
 .results-list {
@@ -125,7 +118,8 @@ h2 {
   color: red;
   text-align: center;
   margin-top: 1rem;
-}.result-item {
+}
+.result-item {
   padding: 1rem;
   border-bottom: 1px solid #ddd;
 }
@@ -143,6 +137,7 @@ h2 {
 
 .links {
   margin-top: 0.5rem;
+  
 }
 
 .links a {
