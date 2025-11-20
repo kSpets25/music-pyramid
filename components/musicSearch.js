@@ -34,7 +34,7 @@ export default function MusicSearch({ initialQuery = '' }) {
       <input
         type="text"
         className="search-input"
-        placeholder="Enter an artist or song to find similar music..."
+        placeholder="Enter a band or song to find similar music..."
         value={query}
         ref={inputRef}
         onChange={(e) => setQuery(e.target.value)}

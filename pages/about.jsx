@@ -24,7 +24,7 @@ export default function About({ user, isLoggedIn }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>About This App</title>
+        <title>About Music Pyramid</title>
         <meta name="description" content="Learn more about this application" />
       </Head>
 

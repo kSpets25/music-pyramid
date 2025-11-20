@@ -26,7 +26,7 @@ export const getServerSideProps = withIronSessionSsr(
     }
 
     try {
-      // Internal API Route → FAST
+      // Internal API Route to make this app FAST//
       const res = await fetch(
         `${process.env.NEXT_PUBLIC_BASE_URL}/api/similarBands?userquery=${encodeURIComponent(
           userquery
@@ -72,7 +72,7 @@ export default function similarBands({
   return (
     <div className={styles.container}>
       <Head>
-        <title>Similar Bands</title>
+        <title>Search Similar Bands</title>
         <meta name="description" content="Music similarity search" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -81,14 +81,14 @@ export default function similarBands({
       <Header isLoggedIn={isLoggedIn} username={user?.username} />
 
       <main className={styles.main}>
-        <h1>My similarBands Page</h1>
-        {/* 🔍 Reusable Search component */}
+        <h1>Search for Similar Bands</h1>
+        {/* Reusable Search component */}
         <MusicSearch initialQuery={userquery} />
 
         {userquery && <h2>Similar music to: "{userquery}"</h2>}
         {error && <p style={{ color: "red" }}>{error}</p>}
 
-        {/* 🎧 Results */}
+        {/* Music Search Results */}
         {results.length > 0 ? (
           <ul className="results-list">
             {results.map((item, i) => {

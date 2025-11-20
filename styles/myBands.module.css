@@ -1,9 +1,9 @@
 
 .container {
   padding-top: 0px;
-  color:red
+  
+  
 }
-
 
 .main {
   background-color: rgb(216, 216, 226);
@@ -32,21 +32,31 @@
   text-decoration: underline;
 }
 /* Artist result card styles */
-.artist-card {
+.artist_card {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
   margin-bottom: 1.5rem;
   padding: 1rem;
   border-radius: 8px;
-  background: #d44a4a;
+  background: #b8afaf;
   transition: box-shadow 0.2s ease;
 }
+
+.artist_card a {
+  padding: 5px;
+  display: block;
+    color:black;
+    text-decoration: none;
+    
+  }
+
 
 .artist-card:hover {
   box-shadow: 0 4px 10px rgba(192, 36, 36, 0.08);
 }
 
+ 
 .artist-image {
   width: 00px;
   height: 100px;
@@ -244,6 +254,20 @@
   line-height: 1.5;
 }
 
+.deleteBtn {
+  margin-top: 10px;
+  background: #d9534f;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.deleteBtn:hover {
+  background: #c9302c;
+}
+
 .footer {
   display: flex;
   flex: 1;
@@ -285,20 +309,6 @@
   }
 }
 
-
-.deleteBtn {
-  margin-top: 10px;
-  background: #d9534f;
-  color: white;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.deleteBtn:hover {
-  background: #c9302c;
-}
 
 .title a {
   color: #0070f3;

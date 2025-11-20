@@ -1,12 +1,10 @@
 html,
 body {
-  padding: 0;
+  padding: 0rem;
   margin: 0rem;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
-
 
 a {
   color: inherit;
@@ -26,7 +24,7 @@ body {
   color: #f6f1f1;
 }
 
-/* Page Title*/
+/* Page Titles */
 h1 {
     margin: 1rem;
     padding-top: 1rem;

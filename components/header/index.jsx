@@ -11,7 +11,7 @@ export default function Header(props) {
           <p className={styles.navigation}>
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>
-            <Link href="/similarBands">Similar Bands</Link>
+            <Link href="/similarBands">Simlar Bands</Link>
             <Link href="/myBands">My Bands</Link>
           </p>
           <div className={styles.container}>
