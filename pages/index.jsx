@@ -35,11 +35,15 @@ export default function Home(props) {
       </Head>
 
       <Header isLoggedIn={props.isLoggedIn} username={props?.user?.username} />
+
       
-      <main className={styles.main}>
-      <h1>The Music Pyramid</h1>
+      <main className={styles.mainHome}>
+      <h1 className={styles.mainTitle}>The Music Pyramid </h1>
       <h2>Start your Music Journey</h2>
       </main>
+      
+      
+      
       
      
       <footer className={styles.footer}>

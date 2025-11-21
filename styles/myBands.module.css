@@ -39,7 +39,7 @@
   margin-bottom: 1.5rem;
   padding: 1rem;
   border-radius: 8px;
-  background: #b8afaf;
+  background: white;
   transition: box-shadow 0.2s ease;
 }
 
@@ -246,6 +246,7 @@
 .card h2 {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
+  color: pink;
 }
 
 .card p {

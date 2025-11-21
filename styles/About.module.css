@@ -1,7 +1,11 @@
 /* About page */
+.container {
+  padding-top: 0;
+}
+
 .main {
   background-color: rgb(216, 216, 226);
-    min-height: 100vh;
+    min-height: 10vh;
     padding: 2rem 0;
     flex: 1;
     display: flex;
@@ -9,21 +13,16 @@
     justify-content: center;
     align-items: center;
   }
-  .container {
-    padding-top: 0;
-  }
+  
   
  .main p {
-    color: whitesmoke;
-    width: 80%;
+    color: rgb(34, 34, 96);
+    width: 60%;
  }
-  .container p {
-    
-    color:whitesmoke
-  }
+  
 
-  .container h2 {
-    color: whitesmoke;
+  .main h2 {
+    color: rgb(138, 36, 36);
   }
   
   .footer {
@@ -40,6 +39,7 @@
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+    
   }
   
   
