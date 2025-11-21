@@ -16,6 +16,10 @@
   align-items: center;
 }
 
+.main p {
+  color: #234872;
+}
+
 .links {
   margin-top: 0.5rem;
   display: flex;
