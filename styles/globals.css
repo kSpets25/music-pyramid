@@ -80,6 +80,11 @@ h3 {
   color: whitesmoke;
 }
 
+p {
+  color: #d70e0e;
+  font-size: 20px;
+}
+
 .title {
   text-align: centerl;
   font-size: 2rem;
