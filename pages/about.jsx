@@ -4,6 +4,7 @@ import { withIronSessionSsr } from "iron-session/next";
 import sessionOptions from "../config/session";
 import Header from "../components/header";
 import styles from "../styles/about.module.css";
+import Image from "next/image";
 
 export const getServerSideProps = withIronSessionSsr(
   async function ({ req }) {
@@ -48,7 +49,12 @@ export default function About({ user, isLoggedIn }) {
       </main>
 
       <footer className={styles.footer}>
-        <p>Built with ❤️ using Next.js</p>
+        <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">
+          Powered by{" "}
+          <span className={styles.logo}>
+            <Image src="/tasteDive_Logo.png" alt="tasteDive Logo" width={120} height={60} />
+          </span>
+        </a>
       </footer>
     </div>
   );

@@ -5,7 +5,7 @@
 
 .main {
   background-color: rgb(216, 216, 226);
-    min-height: 10vh;
+    min-height: 100vh;
     padding: 2rem 0;
     flex: 1;
     display: flex;

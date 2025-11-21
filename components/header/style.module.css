@@ -1,18 +1,31 @@
 .container {
   
   display: flex;
-  padding-top:  20px;
+  padding-top:  10px;
   padding-left: 70px;
   padding-right: 40px;
   justify-content: space-between;
   gap: 40px;
-  color: rgb(229, 228, 231);
+  color: rgb(233, 231, 237);
   background-color: rgb(39, 39, 83);
+  align-items: center;
 }
 
 .navigation {
   display: flex; 
+  align-items:center;
   gap: 30px;
-  padding-top: 20px;
   
+  
+}
+
+.homeImg {
+  padding-bottom: 0px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.homeImg:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
 }
