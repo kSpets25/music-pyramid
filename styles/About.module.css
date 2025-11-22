@@ -19,11 +19,14 @@
     color: rgb(34, 34, 96);
     width: 60%;
  }
-  
+
 
   .main h2 {
     color: rgb(138, 36, 36);
+    text-align: center;
   }
+
+  
   
   .footer {
     display: flex;
@@ -40,24 +43,6 @@
     align-items: center;
     flex-grow: 1;
     
-  }
-  
-  
-  
-  .footer {
-    display: flex;
-    flex: 1;
-    padding: 2rem 0;
-    border-top: 1px solid #eaeaea;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .footer a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
   }
   
   .logo {
