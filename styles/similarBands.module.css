@@ -49,13 +49,6 @@
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
-.grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
 .card {
   margin: 1rem;
   padding: 1.5rem;
@@ -87,6 +80,8 @@
   background-color: #222;
 }
 
+/* Card */
+
 .card:is(:hover, :focus, :active) {
   color: #0070f3;
   border-color: #0070f3;
@@ -102,8 +97,6 @@
   font-size: 1.25rem;
   line-height: 1.5;
 }
-
-
 
 .pageContainer {
     display: flex;
@@ -123,14 +116,14 @@
   }
   
   
-  .search-form {
+  .search_form {
     display: flex;
     width: 100%;
     max-width: 650px;
     margin: 1.5rem auto;
   }
   
-  .search-input {
+  .search_input {
     flex: 1;
     padding: 0.9rem;
     border: 2px solid #ccc;
@@ -141,11 +134,11 @@
     transition: 0.2s;
   }
   
-  .search-input:focus {
+  .search_input:focus {
     border-color: #0070f3;
   }
   
-  .search-button {
+  .search_button {
     padding: 0.9rem 1.2rem;
     background: #0070f3;
     border: none;
@@ -157,7 +150,7 @@
     transition: 0.2s;
   }
   
-  .search-button:hover {
+  .search_button:hover {
     background: #005ec2;
   }
   
@@ -308,29 +301,23 @@
   
   /* Responsive Adjustments            */
  
-  @media (max-width: 600px) {
-    .artist-card {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
+ 
   
-    .artist-image-link {
-      max-width: 160px;
-      min-width: 160px;
-      height: 160px;
+  @media screen and (min-width: 320px) and (max-width: 720px) {
+    .main p {
+      width: 90%
     }
-  
-    .artist-image {
-      width: 160px;
-      height: 160px;
+
+    .main h1 {
+      font-size: 1.0rem;
+      padding: 0;
     }
-  
-    .links {
-      justify-content: center;
+
+    .main h2 {
+      font-size: 0.8rem;
+      padding: 0px;
     }
-  }
-  
+}
 
 
 

@@ -55,22 +55,20 @@
     margin-left: 0.5rem;
   }
   
-  @media (max-width: 600px) {
-    .grid {
-      width: 100%;
-      flex-direction: column;
-    }
-  }
+ 
   
-  @media (prefers-color-scheme: dark) {
-    .card,
-    .footer {
-      border-color: #222;
-    }
-    .code {
-      background: #111;
-    }
-    .logo img {
-      filter: invert(1);
-    }
+  @media screen and (min-width: 320px) and (max-width: 720px) {
+      .main p {
+        width: 90%
+      }
+
+      .main h1 {
+        font-size: 1.0rem;
+        padding: 0;
+      }
+
+      .main h2 {
+        font-size: 0.8rem;
+        padding: 0px;
+      }
   }

@@ -2,6 +2,7 @@
 // Note:  adjust CSS in globals.cc
 import { useRouter } from 'next/router';
 import { useState, useRef, useEffect } from 'react';
+import styles from "../styles/similarBands.module.css";
 
 export default function MusicSearch({ initialQuery = '' }) {
   const router = useRouter();
@@ -30,10 +31,10 @@ export default function MusicSearch({ initialQuery = '' }) {
   };
 
   return (
-    <form className="search-form" onSubmit={handleSubmit}>
+    <form className={styles.search_form} onSubmit={handleSubmit}>
       <input
         type="text"
-        className="search-input"
+        className={styles.search_input}
         placeholder="Enter a band or song to find similar music..."
         value={query}
         ref={inputRef}
@@ -42,7 +43,7 @@ export default function MusicSearch({ initialQuery = '' }) {
           if (e.key === 'Enter') handleSubmit(e);
         }}
       />
-      <button className="search-button" type="submit">
+      <button className={styles.search_button} type="submit">
         Search Similar Music
       </button>
     </form>

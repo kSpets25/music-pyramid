@@ -17,7 +17,7 @@ export default function Header(props) {
             <Link href="/similarBands">Similar Bands</Link>
             <Link href="/myBands">My Bands</Link>
           </p>
-          <div className={styles.container}>
+          <div className={styles.container1}>
             <p>Welcome, {props.username}!</p>
             <p onClick={logout} style={{ cursor: "pointer" }}>
               Logout

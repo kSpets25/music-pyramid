@@ -60,7 +60,7 @@ h1 {
     padding-top: 1rem;
     line-height: 1.15;
     font-size: 2.5rem;
-    color: rgb(138, 36, 36);
+    color: rgb(157, 26, 26);
   
 }
 
@@ -98,71 +98,9 @@ p {
   text-align: center;
 }
 
-.search-form {
-  width: 45%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
 
-.search-input {
-  width: 80%;
-  padding: 1.0rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1.0rem;
-}
 
-.search-button {
-  padding: 0.6rem 1rem;
-  margin-left: 1rem;
-  border: none;
-  border-radius: 4px;
-  background-color: #0070f3;
-  color: white;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-}
 
-.search-button:hover {
-  background-color: #1f8f1f;
-}
-
-.results-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.result-item {
-  padding: 0.8rem 1rem;
-  border-bottom: 1px solid #ddd;
-}
-
-.result-item:last-child {
-  border-bottom: none;
-}
-
-.no-results {
-  text-align: center;
-  color: #666;
-  margin-top: 1rem;
-}
-
-.error {
-  color: red;
-  text-align: center;
-  margin-top: 1rem;
-}
-.result-item {
-  padding: 1rem;
-  border-bottom: 1px solid #ddd;
-}
-
-.result-item h3 {
-  margin: 0 0 0.5rem;
-  color: #0070f3;
-}
 
 .teaser {
   margin: 0.5rem 0;
@@ -278,12 +216,9 @@ p {
   margin-left: 0.5rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+@media screen and (min-width: 320px) and (max-width: 720px) {
+
+
+
+
 }
