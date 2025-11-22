@@ -61,7 +61,7 @@ export const getServerSideProps = withIronSessionSsr(
         ) : (
           <ul className={styles.results_list}>
             {bands.map((band) => (
-              <li key={band._id} className="result-item">
+              <li key={band._id} className={styles.result_item}>
                 <div className={styles.artist_card}>
                   {band.image && <img src={band.image} alt={band.name} />}
                   <div>
@@ -77,13 +77,14 @@ export const getServerSideProps = withIronSessionSsr(
                       </a>
                     )}
                     {band.teaser && <p>{band.teaser}</p>}
-                      
-                      {/* Delete Button css located in */}
+                    <h2>Search Tickets</h2>
+                      {/* Delete Button css located in myBands*/}
                       <button className={styles.deleteBtn}
                         onClick={() => handleDelete(band._id)}
                       >
                         Delete
                       </button>
+                      
                   
                   </div>
                 </div>

@@ -44,8 +44,8 @@ export default function About({ user, isLoggedIn }) {
           <br></br>
           <br></br>
           Most music appls let users search for artists or save their favorites, 
-          but very few made ti easy to explore truly similar bands in a meaningul, 
-          engaging way.l  After researcing this gap, the idea for Music Pyramid was born. 
+          but very few make it easy to explore truly similar bands in a meaninful, 
+          engaging way.  After researcing this gap, the idea for Music Pyramid was born. 
           <br></br>
           <br></br>
           <h2>Features</h2>
@@ -58,14 +58,7 @@ export default function About({ user, isLoggedIn }) {
           <br></br>
           With Music Pyramid, discoverng your next favorite band becomes simple organized and exciting.
           
-           
-          
         </p>
-
-       
-        
-
-        <h2>Tech Stack</h2>
        
       </main>
 

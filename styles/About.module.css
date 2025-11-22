@@ -17,7 +17,7 @@
   
  .main p {
     color: rgb(34, 34, 96);
-    width: 60%;
+    width: 50%;
  }
 
 
@@ -26,6 +26,11 @@
     text-align: center;
   }
 
+  .main h1 {
+    color: rgb(138, 36, 36);
+    padding-top: 1rem;
+    
+  }
   
   
   .footer {

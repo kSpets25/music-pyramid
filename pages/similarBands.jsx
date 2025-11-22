@@ -90,13 +90,13 @@ export default function similarBands({
 
         {/* Music Search Results */}
         {results.length > 0 ? (
-          <ul className="results-list">
+          <ul className={styles.results_list}>
             {results.map((item, i) => {
               const name = item.name || "Unknown Artist";
               const img = item.wImg || "/default-artist.png";
 
               return (
-                <li key={i} className="result-item">
+                <li key={i} className={styles.result_item}>
                   <div className="artist-card">
                     <a
                       href={item.wUrl || "#"}
@@ -104,11 +104,11 @@ export default function similarBands({
                       rel="noreferrer"
                       className="artist-image-link"
                     >
-                      <img src={img} alt={name} className="artist-image" />
+                      <img src={img} alt={name} className={styles.artist_image} />
                     </a>
 
-                    <div className="artist-info">
-                      <h3 className="artist-name">
+                    <div className={styles.artist_info}>
+                      <h3 className={styles.artist_name}>
                         {item.wUrl ? (
                           <a href={item.wUrl} target="_blank" rel="noreferrer">
                             {name}
@@ -118,9 +118,9 @@ export default function similarBands({
                         )}
                       </h3>
 
-                      {item.wTeaser && <p className="teaser">{item.wTeaser}</p>}
+                      {item.wTeaser && <p className={styles.teaser}>{item.wTeaser}</p>}
 
-                      <div className="links">
+                      <div className={styles.links}>
                         {item.wUrl && (
                           <a href={item.wUrl} target="_blank" rel="noreferrer">
                             🔗 Wikipedia
