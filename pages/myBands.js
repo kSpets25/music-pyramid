@@ -77,7 +77,7 @@ export const getServerSideProps = withIronSessionSsr(
                       </a>
                     )}
                     {band.teaser && <p>{band.teaser}</p>}
-                    <h2>Search Tickets</h2>
+                      <h2 className={styles.tickets}>Search Tickets</h2>
                       {/* Delete Button css located in myBands*/}
                       <button className={styles.deleteBtn}
                         onClick={() => handleDelete(band._id)}

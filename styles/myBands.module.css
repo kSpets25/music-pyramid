@@ -46,7 +46,6 @@
 /* Artist result card styles */
 .artist_card {
   display: flex;
-  align-items: flex-start;
   gap: 1rem;
   margin-bottom: 1.5rem;
   padding: 1rem;
@@ -65,7 +64,7 @@
 
 
 .artist_card a:hover {
-  box-shadow: 0 7px 10px rgba(192, 36, 36, 0.08);
+  box-shadow: 0 7px 7px rgba(192, 36, 36, 0.08);
 }
 
  
@@ -84,7 +83,14 @@
   color: #c9302c;
 }
 
+.artist_card h2 {
+  color: #19233e;
 
+}
+
+.tickets {
+  justify-content: left;
+}
 .artist_name a {
   text-decoration: none;
   color: #0a100a;
@@ -113,11 +119,13 @@
 .results_list {
   list-style-type: none;
   padding: 0;
+  
 }
 
 .result_item {
   padding: 0.8rem 1rem;
   border-bottom: 1px solid #dad7d7;
+  justify-content: left;
 }
 
 .result-item:last-child {
@@ -142,7 +150,7 @@
 
 .result_item h3 {
   margin: 0 0 0.5rem;
-  color: #b8c4d2;
+  color: #1a2b40;
 }
 
 .teaser {

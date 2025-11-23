@@ -97,12 +97,12 @@ export default function similarBands({
 
               return (
                 <li key={i} className={styles.result_item}>
-                  <div className="artist-card">
+                  <div className={styles.artist_card}>
                     <a
                       href={item.wUrl || "#"}
                       target="_blank"
                       rel="noreferrer"
-                      className="artist-image-link"
+                      className={styles.artist_image_link}
                     >
                       <img src={img} alt={name} className={styles.artist_image} />
                     </a>
