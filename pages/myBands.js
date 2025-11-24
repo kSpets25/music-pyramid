@@ -6,7 +6,7 @@ import dbConnect from "../db/connection";
 import Band from "../db/models/bands";
 import Header from "../components/header";
 import styles from "../styles/myBands.module.css";
-
+import Footer from "../components/footer";
 
 export const getServerSideProps = withIronSessionSsr(
   async function getServerSideProps({ req }) {
@@ -93,7 +93,7 @@ export const getServerSideProps = withIronSessionSsr(
           </ul>
         )}
       </main>
-      
+      <Footer className={styles.footer}/>
     </div>
   );
   

@@ -6,6 +6,7 @@ import { withIronSessionSsr } from "iron-session/next";
 import sessionOptions from "../config/session";
 import styles from "../styles/Home.module.css";
 import Header from "../components/header";
+import Footer from "../components/footer";
 import useLogout from "../hooks/useLogout";
 
 export const getServerSideProps = withIronSessionSsr(
@@ -41,19 +42,8 @@ export default function Home(props) {
       <h1 className={styles.mainTitle}>The Music Pyramid </h1>
       <h2>Start your Music Journey</h2>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/tasteDive_Logo.png" alt="tasteDive Logo" width={120} height={60} />
-          </span>
-        </a>
-      </footer>
+      <Footer className={styles.footer}/>
+      
     </div>
   );
 }

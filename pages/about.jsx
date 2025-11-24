@@ -5,6 +5,7 @@ import sessionOptions from "../config/session";
 import Header from "../components/header";
 import styles from "../styles/about.module.css";
 import Image from "next/image";
+import Footer from "../components/footer";
 
 export const getServerSideProps = withIronSessionSsr(
   async function ({ req }) {
@@ -61,15 +62,8 @@ export default function About({ user, isLoggedIn }) {
         </p>
        
       </main>
-
-      <footer className={styles.footer}>
-        <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/tasteDive_Logo.png" alt="tasteDive Logo" width={120} height={60} />
-          </span>
-        </a>
-      </footer>
+      <Footer className={styles.footer} />
+      
     </div>
   );
 }

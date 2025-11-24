@@ -6,6 +6,7 @@ import styles from "../styles/similarBands.module.css";
 import Header from "../components/header";
 import MusicSearch from "../components/musicSearch"; // uses updated routing
 import { useRouter } from "next/router";
+import Footer from "../components/footer";
 
 export const getServerSideProps = withIronSessionSsr(
   async function getServerSideProps({ req, query }) {
@@ -177,15 +178,8 @@ export default function similarBands({
           userquery && !error && <p>No similar music found.</p>
         )}
       </main>
-
-      <footer className={styles.footer}>
-        <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/tasteDive_Logo.png" alt="tasteDive Logo" width={120} height={60} />
-          </span>
-        </a>
-      </footer>
+      <Footer className={styles.footer} />
+     
     </div>
   );
 }
