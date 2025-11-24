@@ -33,9 +33,7 @@ h1.mainTitle {
     padding-top: 1rem;
     line-height: 1.15;
     font-size: 2.5rem;
-    color: rgb(109, 29, 29);
-    
-    
+    color: rgb(109, 29, 29);   
 }
 
 /* login Page*/
@@ -52,6 +50,13 @@ h1.mainTitle {
 
 .title,
 .description {
+  text-align: center;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
   text-align: center;
 }
 

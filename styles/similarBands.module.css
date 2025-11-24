@@ -28,7 +28,6 @@
   
 }
 
-
 .title,
 .description {
   text-align: center;
@@ -47,18 +46,6 @@
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 350px;
 }
 
 .form {
@@ -81,6 +68,18 @@
 }
 
 /* Card */
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 350px;
+}
 
 .card:is(:hover, :focus, :active) {
   color: #0070f3;
@@ -107,14 +106,6 @@
     max-width: 900px;
     margin: 0 auto;
   }
-  
-  .heading {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-  
   
   .search_form {
     display: flex;
@@ -155,9 +146,8 @@
   }
   
   
-  /* Results List                      */
-  
-  
+  /* Results List */
+
   .results_list {
     list-style: none;
     padding: 0;
@@ -171,8 +161,7 @@
   }
   
   
-  /* Artist Card                       */
-  
+  /* Artist Card */
   
   .artist_card {
     display: flex;
@@ -262,6 +251,8 @@
     margin-top: 1rem;
     font-weight: 500;
   }
+
+  /* Save Band */
   .saveButton {
     background: #ffbf00;
     border: none;
@@ -317,6 +308,20 @@
       font-size: 0.8rem;
       padding: 0px;
     }
+
+    .result_item {
+      padding: 1rem;
+    }
+
+    .result_list {
+      margin-top: 1rem;
+    }
+
+    .search_form {
+      padding: 1rem;
+    }
+
+    
 }
 
 

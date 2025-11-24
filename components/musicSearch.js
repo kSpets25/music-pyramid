@@ -27,7 +27,7 @@ export default function MusicSearch({ initialQuery = '' }) {
     if (!trimmed) return;
 
     // Route to /similarBands with new query
-    router.replace(`/similarBands?userquery=${encodeURIComponent(trimmed)}`);
+    router.push(`/similarBands?userquery=${encodeURIComponent(query)}`);
   };
 
   return (

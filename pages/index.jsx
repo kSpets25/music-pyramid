@@ -41,11 +41,7 @@ export default function Home(props) {
       <h1 className={styles.mainTitle}>The Music Pyramid </h1>
       <h2>Start your Music Journey</h2>
       </main>
-      
-      
-      
-      
-     
+
       <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"

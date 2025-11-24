@@ -11,9 +11,18 @@ export const getServerSideProps = withIronSessionSsr(
   async function getServerSideProps({ req, query }) {
     const user = req.session.user || null;
     const isLoggedIn = !!user;
-    const userquery = query.userquery || "";
-
+    
+    let userquery = query.userquery || "";
     // No search? No fetch
+    if (!userquery && req.session.lastQuery) {
+      userquery = req.session.lastQuery;
+    }
+
+    // Save latest query to session
+    if (userquery) {
+      req.session.lastQuery = userquery;
+      await req.session.save();
+    }
     if (!userquery) {
       return {
         props: {
@@ -24,9 +33,9 @@ export const getServerSideProps = withIronSessionSsr(
         },
       };
     }
-
+    
     try {
-      // Internal API Route to make this app FAST//
+      // Internal API Route to try to make this app FAST//
       const res = await fetch(
         `${process.env.NEXT_PUBLIC_BASE_URL}/api/similarBands?userquery=${encodeURIComponent(
           userquery
@@ -59,7 +68,6 @@ export const getServerSideProps = withIronSessionSsr(
   sessionOptions
 );
 
-
 export default function similarBands({
   isLoggedIn,
   user,
@@ -77,7 +85,6 @@ export default function similarBands({
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* HEADER unchanged */}
       <Header isLoggedIn={isLoggedIn} username={user?.username} />
 
       <main className={styles.main}>
@@ -102,7 +109,6 @@ export default function similarBands({
                       href={item.wUrl || "#"}
                       target="_blank"
                       rel="noreferrer"
-                      className={styles.artist_image_link}
                     >
                       <img src={img} alt={name} className={styles.artist_image} />
                     </a>

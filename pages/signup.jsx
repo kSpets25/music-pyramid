@@ -55,7 +55,7 @@ export default function Signup(props) {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to the <a href="https://nextjs.org">Next.js</a> Login Page!
+          Sign Up Get Started
         </h1>
 
         <p className={styles.description}>
