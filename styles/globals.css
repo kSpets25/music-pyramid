@@ -60,7 +60,7 @@ html,
       padding-top: 1rem;
       line-height: 1.15;
       font-size: 2.5rem;
-      color: rgb(157, 26, 26);
+      color: rgb(138, 36, 36);
     
   }
 
@@ -149,5 +149,6 @@ html,
   }
 
 @media screen and (min-width: 320px) and (max-width: 720px) {
+
 
 }
