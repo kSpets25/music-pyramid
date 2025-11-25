@@ -4,7 +4,6 @@ import { withIronSessionSsr } from "iron-session/next";
 import sessionOptions from "../config/session";
 import Header from "../components/header";
 import styles from "../styles/about.module.css";
-import Image from "next/image";
 import Footer from "../components/footer";
 
 export const getServerSideProps = withIronSessionSsr(
