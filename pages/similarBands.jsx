@@ -36,11 +36,10 @@ export const getServerSideProps = withIronSessionSsr(
     }
     
     try {
-      // Internal API Route to try to make this app FAST//
+      const protocol = req.headers["x-forwarded-proto"] || "http";
+      const baseUrl = `${protocol}://${req.headers.host}`;
       const res = await fetch(
-        `${process.env.NEXT_PUBLIC_BASE_URL}/api/similarBands?userquery=${encodeURIComponent(
-          userquery
-        )}`
+        `${baseUrl}/api/similarBands?userquery=${encodeURIComponent(userquery)}`
       );
 
       const data = await res.json();
