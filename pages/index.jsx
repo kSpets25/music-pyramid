@@ -39,8 +39,20 @@ export default function Home(props) {
 
       
       <main className={styles.mainHome}>
-      <h1 className={styles.mainTitle}>The Music Pyramid </h1>
+      <h1 className={styles.mainTitle}>Welcome to Music Pyramid </h1>
       <h2>Start your Music Journey</h2>
+      <button className={styles.searchBtn}
+         onClick={() => {
+           if (props.isLoggedIn) {
+             router.push("/similarBands");
+           } else {
+             router.push("/login");
+           }
+         }}
+       >
+         SEARCH BANDS
+       </button>
+
       </main>
       <Footer className={styles.footer}/>
       

@@ -1,22 +1,21 @@
 
 .container {
-  padding-top: 0;
+  padding-top: 0rem;
   color: rgb(10, 13, 12);
 }
+
 .mainHome {
   background-color: rgb(216, 216, 226);
   content: '';
-  /*position: relative;*/
-  top: 0;
+  top: 0px;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 60%;
   background-image: url('/images/band.png');
   background-size: cover;
   background-position: center;
   z-index: -1
 }
-
 
 .main {
   min-height: 100vh;
@@ -30,10 +29,21 @@
 h1.mainTitle {
   
   margin: 0rem;
-    padding-top: 1rem;
+    padding-left: 3.2rem;
+    padding-top: 1.15rem;
     line-height: 1.15;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: rgb(109, 29, 29);   
+}
+
+.searchBtn {
+  color: #e3e5e8;
+  margin-top: 5rem;
+  padding: 0.6rem;
+  margin-left: 3.6rem;
+  background-color: #4b46e1;
+  
+  
 }
 
 /* login Page*/

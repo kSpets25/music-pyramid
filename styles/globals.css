@@ -1,5 +1,5 @@
 html,
-
+  
   body {
   padding: 0rem;
   margin: 0rem;
@@ -33,7 +33,7 @@ html,
   .mainHome{
     /*position: relative;*/
     width: 100vw;
-    height:100vh;
+    height: 100vh;
   }
   a {
     color: inherit;
@@ -66,7 +66,7 @@ html,
 
   /* Tagline */
   h2 {
-    padding-left: 2.0rem;
+    padding-left: 2.6rem;
     margin: 1rem;
     line-height: 1.15;
     font-size: 1.2rem;
@@ -74,10 +74,11 @@ html,
   }
 
   h3 {
+    
     margin: 2rem;
     line-height: 1.15;
-    font-size: 1.5rem;
-    color: whitesmoke;
+    font-size: 1rem;
+    color: rgb(58, 48, 197);
   }
 
   p {
