@@ -23,7 +23,7 @@ export const getServerSideProps = withIronSessionSsr(
 
 export default function About({ user, isLoggedIn }) {
   return (
-    <div className={styles.container}>
+    <div className={styles.containerAbout}>
       <Head>
         <title>About Music Pyramid</title>
         <meta name="description" content="Learn more about this application" />
