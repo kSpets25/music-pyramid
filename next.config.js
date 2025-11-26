@@ -4,4 +4,4 @@ const nextConfig = {
   swcMinify: true,
 }
 
-modules.exports = nextConfig
+module.exports = nextConfig
