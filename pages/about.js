@@ -2,7 +2,7 @@
 import Head from "next/head";
 import { withIronSessionSsr } from "iron-session/next";
 import sessionOptions from "../config/session";
-import styles from "../styles/About.module.css";
+import styles from "../styles/about.module.css";
 import Header from "../components/header";
 import Footer from "../components/footer";
 
