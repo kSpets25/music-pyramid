@@ -1,10 +1,13 @@
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import styles from "../styles/Home.module.css";
 import { useRouter } from "next/router";
+import Header from "../components/header";
 import Footer from "../components/footer";
+
+
+
 export default function Signup(props) {
   const router = useRouter();
   const [
@@ -53,6 +56,8 @@ export default function Signup(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Header isLoggedIn={props.isLoggedIn} username={props?.user?.username} />
+      
       <main className={styles.main}>
         <h1 className={styles.title}>
           Sign Up Get Started
