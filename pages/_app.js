@@ -9,7 +9,6 @@ export const AppContext = createContext() ;
 function MyApp({ Component, pageProps }) {
   return(
   <>
-  <Header />
     <Component {...pageProps} />
   </> 
  ); 
