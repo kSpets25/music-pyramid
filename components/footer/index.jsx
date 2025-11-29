@@ -11,7 +11,6 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{" "}
           <span className={styles.logo}>
             <Image src="/tasteDive_Logo.png" alt="tasteDive Logo" width={120} height={60} />
           </span>

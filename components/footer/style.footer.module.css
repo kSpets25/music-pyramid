@@ -13,8 +13,10 @@
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+    
   }
   .logo {
     height: 0em;
     margin-left: 0.5rem;
+    
   }
