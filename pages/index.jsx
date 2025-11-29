@@ -4,6 +4,7 @@ import { withIronSessionSsr } from "iron-session/next";
 import sessionOptions from "../config/session";
 import styles from "../styles/Home.module.css";
 import Header from "../components/header";
+import  "../pages/similarBands.jsx";
 import Footer from "../components/footer";
 import useLogout from "../hooks/useLogout";
 
