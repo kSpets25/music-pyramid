@@ -11,9 +11,9 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span className={styles.logo}>
+          <div className={styles.logo}>
             <Image src="/tasteDive_Logo.png" alt="tasteDive Logo" width={120} height={60} />
-          </span>
+          </div>
         </a>
       </footer>
     );
