@@ -78,7 +78,13 @@ export const getServerSideProps = withIronSessionSsr(
                     )}
                     {band.teaser && <p>{band.teaser}</p>}
                     <div className={styles.tickets}>
+                    <a 
+                      href="https://www.ticketmaster.com/search?q="
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <h2>Search Tickets</h2>
+                    </a>
                     </div>
                       {/* Delete Button css located in myBands*/}
                       <button className={styles.deleteBtn}
