@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import { withIronSessionSsr } from "iron-session/next";
 import sessionOptions from "../config/session";
 import styles from "../styles/similarBands.module.css";

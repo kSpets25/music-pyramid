@@ -1,6 +1,4 @@
 
-
-
 import React, {createContext,} from 'react';
 import '../styles/globals.css'
 import './index.jsx'
