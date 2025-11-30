@@ -39,7 +39,7 @@ export default function About({ user, isLoggedIn }) {
         <p>
           Music Pyramid is built for listeners who want to dive deeper 
           into their favorite genres and expand their personl music collection. The goal
-          is to take the frustration out of the discovery and replace it with a fun, intuitive
+          is to take the frustration out of the discovery and replace it with a fun, intuitive,
           experience.
           <br></br>
           <br></br>
@@ -52,11 +52,11 @@ export default function About({ user, isLoggedIn }) {
           Starting with one band, users can build their own "music pyramid" as the application 
           suggests similar artists to explore.  Each recommendation includes a band iage, name, 
           a Wikipedia link for background, and a YouTube link to instantly sample their sound.
-          Every band you save is stored under your account so you can revisit them anytime in the{" "}
+          Every band you save is stored under your account, and you can revisit them anytime in the{" "}
           <strong>My Bands</strong> page.
           <br></br>
           <br></br>
-          With Music Pyramid, discoverng your next favorite band becomes simple organized and exciting.
+          With Music Pyramid, discoverng your next favorite band becomes simple, organized, and exciting!
           
         </p>
        
