@@ -12,7 +12,7 @@ export default function Footer() {
           rel="noopener noreferrer"
         >
           <div className={styles.logo}>
-            <Image src="/tasteDive_Logo.png" alt="tasteDive Logo" width={120} height={60} />
+            <Image src="/images/tasteDive_Logo.png" alt="tasteDive Logo" width={120} height={60} />
           </div>
         </a>
       </footer>
