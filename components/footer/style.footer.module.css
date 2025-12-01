@@ -1,9 +1,8 @@
 .footer {
-    background-color: rgb(39, 39, 83);
+    background-color: rgb(193, 193, 201);
     display: flex;
     flex: 1;
     height: 4rem;
-    border-top: 0px solid #eaeaea;
     justify-content: center;
     align-items: center;
     margin-top: 0rem;
@@ -15,6 +14,7 @@
     align-items: center;
     flex-grow: 1;
     
+    
   
   }
   .logo {
@@ -22,6 +22,6 @@
   }
 
   .logo.background {
-    background-color: blueviolet;
     padding: 10px;
+    
   }
