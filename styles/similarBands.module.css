@@ -275,12 +275,17 @@
       width: 90%
     }
 
+    .main {
+      width: 140%;
+
+    }
+
     .container {
-      width: 120%;;
+      width: 100%;;
     }
 
     .main h1 {
-      font-size: 1.0rem;
+      font-size: 1.5rem;
       padding: 0;
     }
 

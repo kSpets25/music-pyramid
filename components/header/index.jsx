@@ -26,7 +26,7 @@ export default function Header(props) {
         </>
       ) : (
         <>
-          <p>
+          <p className={styles.loginNav}>
             <Link href="/">Home</Link>
           </p>
           <p>
