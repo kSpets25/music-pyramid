@@ -7,7 +7,7 @@ export default function Footer() {
     return (
         <footer className={styles.footer}>
         <a
-          href="https://tastedive.com/read/api"
+          href=""
           target="_blank"
           rel="noopener noreferrer"
         >
