@@ -1,7 +1,29 @@
-## About Music Pyramid
-Music Pyramid was born out of a simple frustration shared by many music enthusiastas: finding new bands that truly resonate with the sound of the artist you already love. In a household full of music lovers, discovering similar music and keeping track of it in one easy place, proved to be more difficult than expected. After researching existing solutions, it beame clear that while many application allow users to search for and Save music, few focus on helping listeners explore similar bands in an engaging and intuitive way. This inspired the createation of Music Pyramid, an application deducated to helping users, listen to, and log new music based on the bands they already enjoy. 
+# Music Pyramid - Search and save a personal list of similar bands.
 
-On the Similar Bands Page you can search for similar bands you already love. A list of similar bands will appear for users to explore. Every band you save is stored under your account so you can revisit them anytime in the My Bands page.
+## About Music Pyramid
+Music Pyramid was born out of a simple frustration shared by many music fans: finding new bands that truly resonate with the sound of the artist you already love. In a household full of music lovers, discovering similar music and keeping track of it in one easy place, proved to be more difficult than expected. After researching existing solutions, it became clear that while many applications allow you to search for and save music, few focus on helping listeners find and explore similar bands in an engaging way. This inspired the creation of Music Pyramid, an application dedicated to helping you, find, listen to, and log new music based on the bands you already enjoy. 
+ 
+Below is a preview of the home page.
+
+![Alt text](homePage.png)
+On the home page, once you create an account, you are able to select the "SEARCH BANDS" button and start finding your next favorite band! Enter a favorite band and a list of similar bands is revealed.
+
+Preview of the similarBands page.
+![Alt text](similarBandsResults.png)
+
+For each band result, you have the option to explore the band. If you click the save button a box will appear confirming you want to save.  
+![Alt text](saveBandNotification.png)
+
+Once you save the band to the "myBands" page, a wikipedia link and youTube link are provided to learn more about the band and preview a song. 
+![Alt text](myBandsView.png)
+
+On the Similar Bands Page you can search for similar bands you already enjoy listening to. Enter a band name and a list of similar bands will appear for you to explore. 
+
+## Every band you save is stored in your account so you can revisit them anytime in the My Bands page.
+
+At anytime you can delete a bank from your "My Bands" page.
+![Alt text](deleteBandNotification.png)
+
 
 ## About This Application
 
