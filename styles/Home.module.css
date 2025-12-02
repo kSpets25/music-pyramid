@@ -27,7 +27,6 @@
 }
 
 
-
 h1.mainTitle {
   
   margin: 0rem;
@@ -37,6 +36,7 @@ h1.mainTitle {
     font-size: 3rem;
     color: rgb(61, 18, 18);   
 }
+
 
 .searchBtn {
   color: #e3e5e8;
@@ -63,7 +63,7 @@ h1.mainTitle {
 .title,
 .description {
   text-align: center;
-}
+} 
 
 .heading {
   font-size: 2rem;
@@ -146,11 +146,20 @@ h1.mainTitle {
 
 @media screen and (min-width: 320px) and (max-width: 720px) {
   .main {
-    width: 100%;
+    width: 140%;
     height:100%;
   }
 
   .mainHome {
     width: 140%;;
+  }
+
+  .card {
+    padding-left: 1rem;
+  }
+
+  h1.title {
+    font-size: 30px;
+    padding-left: 10px;
   }
 }
