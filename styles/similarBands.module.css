@@ -2,6 +2,7 @@
 .container {
   padding-top: 0;
   color: #32a2aa;
+  
 }
 
 .main {
@@ -272,6 +273,10 @@
   @media screen and (min-width: 320px) and (max-width: 720px) {
     .main p {
       width: 90%
+    }
+
+    .container {
+      width: 120%;;
     }
 
     .main h1 {
