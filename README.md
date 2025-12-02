@@ -1,4 +1,4 @@
-# Music Pyramid - Search and save a personal list of similar bands.
+# Music Pyramid - Search, build, and save a personal list of music.
 
 ## About Music Pyramid
 Music Pyramid was born out of a simple frustration shared by many music fans: finding new bands that truly resonate with the sound of the artist you already love. In a household full of music lovers, discovering similar music and keeping track of it in one easy place, proved to be more difficult than expected. After researching existing solutions, it became clear that while many applications allow you to search for and save music, few focus on helping listeners find and explore similar bands in an engaging way. This inspired the creation of Music Pyramid, an application dedicated to helping you, find, listen to, and log new music based on the bands you already enjoy. 
@@ -6,22 +6,25 @@ Music Pyramid was born out of a simple frustration shared by many music fans: fi
 Below is a preview of the home page.
 
 ![Alt text](homePage.png)
-On the home page, once you create an account, you are able to select the "SEARCH BANDS" button and start finding your next favorite band! Enter a favorite band and a list of similar bands is revealed.
+On the home page, once you create an account, you are able to select the "SEARCH BANDS" button and start finding your next favorite band! You will be directed to the Similar Bands page.  
 
-Preview of the similarBands page.
+Preview of the Similar Bands page.
+
 ![Alt text](similarBandsResults.png)
+On the Similar Bands page, enter a favorite band or even the word "rock" and a list of similar bands or music will appear.
 
-For each band result, you have the option to explore the band. If you click the save button a box will appear confirming you want to save.  
+For each band result, you have the option to explore the band. Wikipedia and YouTube links are provided to learn more about the band and preview songs. If you like the band and click the save button, a box will appear confirming you want to save.
+
 ![Alt text](saveBandNotification.png)
 
-Once you save the band to the "myBands" page, a wikipedia link and youTube link are provided to learn more about the band and preview a song. 
+Preview of the My Bands page.
+
 ![Alt text](myBandsView.png)
 
-On the Similar Bands Page you can search for similar bands you already enjoy listening to. Enter a band name and a list of similar bands will appear for you to explore. 
+## Every band you save is stored in your account so you can revisit them anytime on the My Bands page.
 
-## Every band you save is stored in your account so you can revisit them anytime in the My Bands page.
+Once the band is saved to your My Bands Page, the bands remains there, until YOU remove them. At anytime you can delete a bank from your "My Bands" page.
 
-At anytime you can delete a bank from your "My Bands" page.
 ![Alt text](deleteBandNotification.png)
 
 
