@@ -7,7 +7,6 @@ html,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
-
   main{
     background-image: url('/images/musicNotes.png'); 
     background-size: cover; 
@@ -61,7 +60,6 @@ html,
       line-height: 1.15;
       font-size: 2.5rem;
       color: rgb(138, 36, 36);
-    
   }
 
   /* Tagline */
@@ -114,7 +112,6 @@ html,
 
   .links {
     margin-top: 0.5rem;
-    
   }
 
   .links a {

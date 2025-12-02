@@ -144,7 +144,6 @@
     background: #005ec2;
   }
   
-  
   /* Results List */
 
   .results_list {
@@ -158,7 +157,6 @@
   .result_item {
     margin: 1.5rem 0;
   }
-  
   
   /* Artist Card */
   
@@ -236,7 +234,6 @@
     text-decoration: underline;
   }
   
-  
   /* No Results + Error Messages       */
   
   .no_results {
@@ -277,11 +274,10 @@
 
     .main {
       width: 140%;
-
     }
 
     .container {
-      width: 100%;;
+      width: 100%;
     }
 
     .main h1 {
@@ -305,8 +301,7 @@
     .search_form {
       padding: 1rem;
     }
-
-    
+  
 }
 
 

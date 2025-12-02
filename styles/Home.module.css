@@ -26,7 +26,6 @@
   align-items: center;
 }
 
-
 h1.mainTitle {
   
   margin: 0rem;
@@ -37,15 +36,12 @@ h1.mainTitle {
     color: rgb(61, 18, 18);   
 }
 
-
 .searchBtn {
   color: #e3e5e8;
   margin-top: 5rem;
   padding: 0.6rem;
   margin-left: 3.6rem;
-  background-color: #4b46e1;
-  
-  
+  background-color: #4b46e1; 
 }
 
 /* login Page*/
