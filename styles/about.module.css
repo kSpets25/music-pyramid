@@ -10,7 +10,6 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    
     align-items: center;
   }
 
@@ -32,17 +31,17 @@
     
   }
   
-  @media screen and (min-width: 320px) and (max-width: 720px) {
+  @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .containerAbout {
       width: 100%;
     } 
     
     .main {
-      width: 140%;;
+      width: 150%;
     }
     
     .main p {
-        width: 90%
+        width: 80%
       }
 
       .main h1 {

@@ -64,10 +64,10 @@ html,
 
   /* Tagline */
   h2 {
-    padding-left: 2.4rem;
+    padding-left: 0rem;
     margin: 1rem;
     line-height: 1.0;
-    font-size: 1.16rem;
+    font-size: 1.6rem;
     color: rgb(35, 31, 123);
   }
 

@@ -40,6 +40,7 @@ export default function Home(props) {
       <main className={styles.mainHome}>
       <h1 className={styles.mainTitle}>Welcome to Music Pyramid </h1>
       <h2>Start your Music Journey</h2>
+      <div className={styles.search}>
       <button className={styles.searchBtn}
          onClick={() => {
            if (props.isLoggedIn) {
@@ -51,7 +52,7 @@ export default function Home(props) {
        >
          SEARCH BANDS
        </button>
-
+       </div>
       </main>
       <Footer className={styles.footer}/>
       
