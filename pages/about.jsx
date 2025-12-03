@@ -50,7 +50,7 @@ export default function About({ user, isLoggedIn }) {
           <br></br>
           <br></br>
           <h2>Features</h2>
-          Starting with one band, users can build their own "music pyramid" as the application 
+          Starting with one band, you can build your own "music pyramid" as the application 
           suggests similar artists to explore.  Each recommendation includes a band image, name, 
           a Wikipedia link, for background information, and a YouTube link to instantly sample the music.
           Every band you save is stored under your account, and you can revisit the page anytime in the{" "}
