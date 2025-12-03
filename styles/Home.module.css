@@ -143,12 +143,12 @@ h1.mainTitle {
 @media screen and (min-device-width: 320px) and (max-device-width: 768px) {
 
   .main {
-    width: 100%;
+    width: 150%;
     height:100%;
   }
 
   .mainHome {
-    width: 140%;;
+    width: 150%;;
   }
 
   .card {

@@ -35,7 +35,7 @@ Once the band is saved to your "My Bands" page, the bands remain there, until YO
 
 ## Technical Features
 
-This application is a NextJS and React application.  MongoDB Atlas is used as the database solution to save the chosen data.  Also, the application will be responsive on mobile, tablet, and desktop devices, and is deployed by Vercel.
+This application is a NextJS and React application. A GitHub repository was created with an MIT License. MongoDB Atlas is used as the database solution to save the chosen data.  Also, the application will be responsive on mobile, tablet, and desktop devices, and is deployed by Vercel.
 
 ## TasteDive API : This application incorporates a third-party API called TasteDive to provide the similar band searches.
 
