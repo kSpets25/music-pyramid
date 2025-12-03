@@ -37,23 +37,24 @@ export default function About({ user, isLoggedIn }) {
         <h2>Inspiration</h2>
 
         <p>
-          Music Pyramid is built for listeners who want to dive deeper 
-          into their favorite genres and expand their personl music collection. The goal
-          is to take the frustration out of the discovery and replace it with a fun, intuitive,
+        Welcome to Music Pyramid! This application was developed by and for music lovers. Ever wish you could search, 
+          explore, and store music similar to the bands you already listen to?
+          Music Pyramid was built for those who want to do just that!   The goal
+          is to take the frustration out of the discovery and replace it with a fun, interactive, and efficient
           experience.
           <br></br>
           <br></br>
-          Most music appls let users search for artists or save their favorites, 
-          but very few make it easy to explore truly similar bands in a meaninful, 
-          engaging way.  After researcing this gap, the idea for Music Pyramid was born. 
+          Most music applications let users search for artists or save their favorites, 
+          but very few make it easy to truly explore similar bands in a meaninful and  
+          relevant way.  After researcing this gap, the idea for Music Pyramid was born. 
           <br></br>
           <br></br>
           <h2>Features</h2>
           Starting with one band, users can build their own "music pyramid" as the application 
-          suggests similar artists to explore.  Each recommendation includes a band iage, name, 
-          a Wikipedia link for background, and a YouTube link to instantly sample their sound.
-          Every band you save is stored under your account, and you can revisit them anytime in the{" "}
-          <strong>My Bands</strong> page.
+          suggests similar artists to explore.  Each recommendation includes a band image, name, 
+          a Wikipedia link, for background information, and a YouTube link to instantly sample the music.
+          Every band you save is stored under your account, and you can revisit the page anytime in the{" "}
+          <strong>My Bands</strong> page. You can add or delete bands as you wish.
           <br></br>
           <br></br>
           With Music Pyramid, discoverng your next favorite band becomes simple, organized, and exciting!
